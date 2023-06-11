@@ -187,6 +187,14 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "dd8b5dd2ae5ed71462c540258bedcb51965123ad7e7ccf4b9a8cafaa4a63576d"
 
 [[package]]
+name = "pathsize"
+version = "0.1.0"
+dependencies = [
+ "clap",
+ "walkdir",
+]
+
+[[package]]
 name = "proc-macro2"
 version = "1.0.59"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -252,14 +260,6 @@ checksum = "8e6bf6f19e9f8ed8d4048dc22981458ebcf406d67e94cd422e5ecd73d63b3237"
 dependencies = [
  "rustix",
  "windows-sys",
-]
-
-[[package]]
-name = "treesize"
-version = "0.1.0"
-dependencies = [
- "clap",
- "walkdir",
 ]
 
 [[package]]
