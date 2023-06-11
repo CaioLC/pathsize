@@ -14,7 +14,7 @@ jobs:
       - name: Create Release
         uses: actions/create-release@latest
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.CAIO }}
         with:
           tag_name: ${{ github.ref }}
           release_name: ${{ github.ref }}
@@ -54,4 +54,4 @@ jobs:
           archive_types: ${{ matrix.archive }}
           extra_files: "README.md README_zh.md LICENSE"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.CAIO }}
